@@ -1,0 +1,4 @@
+request_host: https://api.getpostman.com
+headers:
+    Content-Type:   application/json
+    X-API-Key:   PMAK-60912ba12e1a4c0046455c2b-f9f29d8e317b35744722fd50b82d1ba23d

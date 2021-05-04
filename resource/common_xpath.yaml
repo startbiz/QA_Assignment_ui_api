@@ -1,0 +1,19 @@
+cookies:
+     accept:     //div[@class="cookie__banner"]//button[@type="button"]
+
+cartype:
+    xpath_cartype:    //*[text()="ประเภทรถยนต์"]/../..//span[@class="v-btn__content"]
+select car_type:
+       sedan_car:     //div[@class="modal__cartype__button button__togglegroup--modalcarInfo--container"]//*[text()="รถเก๋ง"]
+select brand_car:
+       honda:       //div[@class="modalcarbrand__button button__togglegroup--modalcarInfo--container"]//*[text()="HONDA"]
+select model_car:
+       city:        //div[@class="modal__carmodel__content---container button__togglegroup--modalcarInfo--container"]//*[text()="CITY"]
+select submodel_car:
+       city_1.3:     //div[@class="modal__carsubmodel__btngroup--container"]//*[text()="CITY 1.3"]
+select registration_year:
+       2563_(2020): //div[@class="button__togglegroup--modalcarInfo--container"]//*[text()="2563 (2020)"]
+select insurance_type:
+      2st_insurance:   //div[@class="button__togglegroup--modalcarInfo--container"]//*[text()="ชั้น 2"]
+check_insurance premium:    //p[@class="producttype__submit--text"]
+       

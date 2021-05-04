@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on darwin)" generated="20210504 19:06:07.163" rpa="false">
+<suite id="s1" name="Automate Ui" source="/Users/panidaonprasert/Documents/QA_Assignment/TestCases/automate_ui.robot">
+<test id="s1-t1" name="TC001 Filter Car Type until Insurance Type">
+<kw name="open brownser" library="ui_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://insurance.tescolotusmoney.com/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210504 19:06:07.435" level="INFO">Opening browser 'Chrome' to base url 'https://insurance.tescolotusmoney.com/'.</msg>
+<status status="PASS" starttime="20210504 19:06:07.435" endtime="20210504 19:06:11.414"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210504 19:06:11.415" endtime="20210504 19:06:11.718"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:07.434" endtime="20210504 19:06:11.718"></status>
+</kw>
+<kw name="accpet cookie" library="ui_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${cookies}[accept]</arg>
+</arguments>
+<msg timestamp="20210504 19:06:11.720" level="INFO">Clicking button '//div[@class="cookie__banner"]//button[@type="button"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:11.719" endtime="20210504 19:06:11.829"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:12.383" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:11.830" endtime="20210504 19:06:12.383"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:15.384" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:12.384" endtime="20210504 19:06:15.385"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:11.719" endtime="20210504 19:06:15.385"></status>
+</kw>
+<kw name="select car type" library="ui_keywords">
+<arguments>
+<arg>${select cartype}[sedan_car]</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${cartype}[xpath_cartype]</arg>
+</arguments>
+<msg timestamp="20210504 19:06:15.387" level="INFO">Clicking element '//*[text()="ประเภทรถยนต์"]/../..//span[@class="v-btn__content"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:15.386" endtime="20210504 19:06:15.493"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${select_cartype}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:15.494" endtime="20210504 19:06:15.726"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:18.728" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:15.727" endtime="20210504 19:06:18.728"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:19.082" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:18.728" endtime="20210504 19:06:19.082"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_cartype}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:19.082" level="INFO">Clicking element '//div[@class="modal__cartype__button button__togglegroup--modalcarInfo--container"]//*[text()="รถเก๋ง"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:19.082" endtime="20210504 19:06:19.137"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:15.385" endtime="20210504 19:06:19.137"></status>
+</kw>
+<kw name="select brand car" library="ui_keywords">
+<arguments>
+<arg>${select brand_car}[honda]</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:22.139" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:19.138" endtime="20210504 19:06:22.139"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:22.493" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:22.140" endtime="20210504 19:06:22.493"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${select_brand_car}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:22.493" endtime="20210504 19:06:22.511"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_brand_car}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:22.511" level="INFO">Clicking element '//div[@class="modalcarbrand__button button__togglegroup--modalcarInfo--container"]//*[text()="HONDA"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:22.511" endtime="20210504 19:06:22.559"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:19.138" endtime="20210504 19:06:22.559"></status>
+</kw>
+<kw name="select model car" library="ui_keywords">
+<arguments>
+<arg>${select model_car}[city]</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:25.562" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:22.560" endtime="20210504 19:06:25.562"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:25.931" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:25.563" endtime="20210504 19:06:25.931"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${select_model_car}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:25.931" endtime="20210504 19:06:25.948"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_model_car}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:25.948" level="INFO">Clicking element '//div[@class="modal__carmodel__content---container button__togglegroup--modalcarInfo--container"]//*[text()="CITY"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:25.948" endtime="20210504 19:06:26.001"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:22.559" endtime="20210504 19:06:26.001"></status>
+</kw>
+<kw name="select submodel car" library="ui_keywords">
+<arguments>
+<arg>${select submodel_car}[city_1.3]</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:29.003" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:26.002" endtime="20210504 19:06:29.003"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:29.353" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:29.004" endtime="20210504 19:06:29.353"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${select_submodel_car}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:29.353" endtime="20210504 19:06:29.368"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_submodel_car}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:29.368" level="INFO">Clicking element '//div[@class="modal__carsubmodel__btngroup--container"]//*[text()="CITY 1.3"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:29.368" endtime="20210504 19:06:29.424"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:26.002" endtime="20210504 19:06:29.425"></status>
+</kw>
+<kw name="select registration year" library="ui_keywords">
+<arguments>
+<arg>${select registration_year}[2563_(2020)]</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:32.427" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:29.425" endtime="20210504 19:06:32.427"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:32.791" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:32.427" endtime="20210504 19:06:32.792"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${select_registration_year}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:32.792" endtime="20210504 19:06:32.809"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_registration_year}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:32.810" level="INFO">Clicking element '//div[@class="button__togglegroup--modalcarInfo--container"]//*[text()="2563 (2020)"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:32.809" endtime="20210504 19:06:32.862"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:29.425" endtime="20210504 19:06:32.862"></status>
+</kw>
+<kw name="select insurance type" library="ui_keywords">
+<arguments>
+<arg>${select insurance_type}[2st_insurance]</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:35.863" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:32.863" endtime="20210504 19:06:35.863"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:36.239" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:35.864" endtime="20210504 19:06:36.239"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${select insurance_type}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:36.239" endtime="20210504 19:06:36.256"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${select insurance_type}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:36.256" level="INFO">Clicking element '//div[@class="button__togglegroup--modalcarInfo--container"]//*[text()="ชั้น 2"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:36.256" endtime="20210504 19:06:36.309"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:32.862" endtime="20210504 19:06:36.309"></status>
+</kw>
+<kw name="click button check insurance premium" library="ui_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${check insurance premium}</arg>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20210504 19:06:36.310" endtime="20210504 19:06:36.329"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${check insurance premium}</arg>
+</arguments>
+<msg timestamp="20210504 19:06:36.330" level="INFO">Clicking element '//p[@class="producttype__submit--text"]'.</msg>
+<status status="PASS" starttime="20210504 19:06:36.330" endtime="20210504 19:06:36.392"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210504 19:06:39.393" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210504 19:06:36.392" endtime="20210504 19:06:39.393"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210504 19:06:39.731" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210504 19:06:39.393" endtime="20210504 19:06:39.731"></status>
+</kw>
+<status status="PASS" starttime="20210504 19:06:36.310" endtime="20210504 19:06:39.731"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210504 19:06:39.731" endtime="20210504 19:06:39.830"></status>
+</kw>
+<doc>Pre-requisite : open brownser go to link https://insurance.tescolotusmoney.com/
+and accept cookies in website</doc>
+<status status="PASS" starttime="20210504 19:06:07.434" endtime="20210504 19:06:39.830" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210504 19:06:07.164" endtime="20210504 19:06:39.831"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Automate Ui">Automate Ui</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
